@@ -13,7 +13,7 @@ COPY etc/i2pd/i2pd.sshd.conf /etc/i2pd/i2pd.conf
 CMD chown -R i2pd:i2pd /var/lib/i2pd; \
     ln -sf /usr/share/i2pd/certificates /var/lib/i2pd/certificates; \
     ln -sf /etc/i2pd/subscriptions.txt /var/lib/i2pd/subscriptions.txt; \
-    su - -c "i2pd i2pd --service --loglevel=error \
+    su - -c "i2pd i2pd --service --loglevel=info \
         --conf=/etc/i2pd/i2pd.conf \
         --tunconf=/etc/i2pd/tunnels.conf \
         --log=/var/log/i2pd/log"; \
