@@ -2,7 +2,7 @@
 i2pd_dat?=$(PWD)/i2pd_dat
 
 docker-build: pull
-	docker build --force-rm -f Dockerfile -t eyedeekay/eepsshd
+	docker build --force-rm -f Dockerfile -t eyedeekay/eepsshd .
 
 pull:
 	git pull
